@@ -27,10 +27,10 @@ static inline const char* getBTDefaultName()
     property_get("ro.boot.hardware", device, "");
 
     if (!strcmp("tulip", device)) {
-        return "Xperia M4 Aqua";
+        return "Sony Xperia M4 Aqua";
     }
 
-    return "Xperia";
+    return "Sony Xperia";
 }
 
 #define BTM_DEF_LOCAL_NAME getBTDefaultName()
