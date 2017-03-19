@@ -84,6 +84,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # SELinux
+BOARD_USE_ENFORCING_SELINUX := false
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
 
 include device/sony/common/CommonConfig.mk
