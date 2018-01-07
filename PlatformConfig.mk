@@ -78,3 +78,4 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 TARGET_COPY_OUT_VENDOR := system/vendor
 
 include device/sony/common/CommonConfig.mk
+include device/sony/common-recovery/RecoveryConfig.mk
