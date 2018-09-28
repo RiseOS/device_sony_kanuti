@@ -17,7 +17,7 @@ PLATFORM_COMMON_PATH := device/sony/kanuti
 PRODUCT_PLATFORM_SOD := true
 
 TARGET_BOARD_PLATFORM := msm8916
-KERNEL_PATH := kernel/sony/msm-4.9
+KERNEL_PATH := kernel/sony/msm8939-4.9
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
