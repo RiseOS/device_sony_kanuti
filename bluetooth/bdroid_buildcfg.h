@@ -37,5 +37,6 @@ static inline const char* getBTDefaultName()
 #endif // OS_GENERIC
 
 #define BTA_HOST_INTERLEAVE_SEARCH  TRUE
+#undef PROPERTY_VALUE_MAX
 
 #endif
