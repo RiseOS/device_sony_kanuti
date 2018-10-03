@@ -74,6 +74,9 @@ NXP_CHIP_FW_TYPE := PN547C2
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
+# Legacy Keymaster
+TARGET_LEGACY_KEYMASTER := true
+
 # Platform witout a vendor partition
 TARGET_COPY_OUT_VENDOR := system/vendor
 
