@@ -17,7 +17,7 @@ PLATFORM_COMMON_PATH := device/sony/kanuti
 PRODUCT_PLATFORM_SOD := true
 
 TARGET_BOARD_PLATFORM := msm8916
-KERNEL_PATH := kernel/sony/msm8939-4.9
+KERNEL_PATH := kernel/sony/msm8939-3.10
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -77,4 +77,4 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 # Platform witout a vendor partition
 TARGET_COPY_OUT_VENDOR := system/vendor
 
-include device/sony/common/CommonConfig.mk
+include device/sony/common-legacy/CommonConfig.mk

@@ -102,20 +102,20 @@
 
 # NFC
 /dev/pn54x                                                      0660 nfc nfc
-/sys/devices/platform/soc/78ba000.i2c/i2c-6/6-0028  init_deinit 0200 nfc nfc
-/sys/devices/platform/soc/78ba000.i2c/i2c-6/6-0028  set_pwr     0200 nfc nfc
-/sys/devices/platform/soc/78ba000.i2c/i2c-6/6-0028  res_ready   0400 nfc nfc
-/sys/devices/platform/soc/78ba000.i2c/i2c-6/6-0028  recv_rsp    0600 nfc nfc
-/sys/devices/platform/soc/78ba000.i2c/i2c-6/6-0028  send_cmd    0200 nfc nfc
+/sys/devices/soc.0/78ba000.i2c/i2c-6/6-0028  init_deinit 0200 nfc nfc
+/sys/devices/soc.0/78ba000.i2c/i2c-6/6-0028  set_pwr     0200 nfc nfc
+/sys/devices/soc.0/78ba000.i2c/i2c-6/6-0028  res_ready   0400 nfc nfc
+/sys/devices/soc.0/78ba000.i2c/i2c-6/6-0028  recv_rsp    0600 nfc nfc
+/sys/devices/soc.0/78ba000.i2c/i2c-6/6-0028  send_cmd    0200 nfc nfc
 
 # LED
-/sys/devices/platform/soc/78b6000.i2c/i2c-0/0-0030/leds/led:* max_brightness          0664 system system
-/sys/devices/platform/soc/78b6000.i2c/i2c-0/0-0030/leds/led:* brightness              0664 system system
-/sys/devices/platform/soc/78b6000.i2c/i2c-0/0-0030/leds/led:* blink                   0664 system system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-0030/leds/led:* max_brightness          0664 system system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-0030/leds/led:* brightness              0664 system system
+/sys/devices/soc.0/78b6000.i2c/i2c-0/0-0030/leds/led:* blink                   0664 system system
 /sys/class/leds/lcd-backlight/max_brightness                                          0644 root system
 /sys/class/leds/lcd-backlight/brightness                                              0664 system system
-/sys/devices/platform/soc/1a00000.qcom,mdss_mdp/qcom,mdss_fb_primary.126/leds/lcd-backlight max_brightness 0664 system system
-/sys/devices/platform/soc/1a00000.qcom,mdss_mdp/qcom,mdss_fb_primary.126/leds/lcd-backlight brightness     0664 system system
+/sys/devices/soc.0/1a00000.qcom,mdss_mdp/qcom,mdss_fb_primary.126/leds/lcd-backlight max_brightness 0664 system system
+/sys/devices/soc.0/1a00000.qcom,mdss_mdp/qcom,mdss_fb_primary.126/leds/lcd-backlight brightness     0664 system system
 
 # Sensors
 /sys/devices/virtual/input/input* enable                   0660  root   input

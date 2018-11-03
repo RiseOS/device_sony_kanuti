@@ -17,11 +17,11 @@ PLATFORM_COMMON_PATH := device/sony/kanuti
 
 TARGET_LEGACY_KEYMASTER := true
 
-$(call inherit-product, device/sony/common/common.mk)
+$(call inherit-product, device/sony/common-legacy/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 SOMC_PLATFORM := kanuti
-SOMC_KERNEL_VERSION := 4.9
+SOMC_KERNEL_VERSION := 3.10
 
 SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
@@ -125,12 +125,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wifi.addr_path=/sys/devices/platform/soc/a000000.qcom,wcnss-wlan/wcnss_mac_addr
+    ro.wifi.addr_path=/sys/devices/soc.0/a000000.qcom,wcnss-wlan/wcnss_mac_addr
 
 # Force camera API
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=2
 
 # setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/7824900.sdhci/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
